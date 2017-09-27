@@ -18,7 +18,7 @@ class API extends Base
         }
     }
 
-    public function searchImage($service_type, $service_id, $image, $loc = [], $tags = [], $count = 20,
+    protected function searchImage($service_type, $service_id, $image, $loc = [], $tags = [], $count = 20,
                                    $skip_dedupe=False, $threshold = 0.0)
     {
         $this->loadImage($image);
